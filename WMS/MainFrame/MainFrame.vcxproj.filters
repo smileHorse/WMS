@@ -1,0 +1,110 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{D9D6E242-F8AF-46E4-B9FD-80ECBC20BA3E}</UniqueIdentifier>
+      <Extensions>qrc;*</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Form Files">
+      <UniqueIdentifier>{99349809-55BA-4b9d-BF79-8FDBB0286EB3}</UniqueIdentifier>
+      <Extensions>ui</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{D9D6E242-F8AF-46E4-B9FD-80ECBC20BA3E}</UniqueIdentifier>
+      <Extensions>qrc;*</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="common">
+      <UniqueIdentifier>{866f7a58-1601-4343-bc9a-7bd1c37aa53f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="common\container">
+      <UniqueIdentifier>{d506c363-6b22-451a-a194-59d07901d07f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="util">
+      <UniqueIdentifier>{2575364d-c06e-48db-b5d7-6a92cc023f28}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MainFrame.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\container\AsideWidget.cpp">
+      <Filter>common\container</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\container\ContainerWidget.cpp">
+      <Filter>common\container</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\container\FooterWidget.cpp">
+      <Filter>common\container</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\container\FrameLine.cpp">
+      <Filter>common\container</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\container\HeaderWidget.cpp">
+      <Filter>common\container</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\container\MainWidget.cpp">
+      <Filter>common\container</Filter>
+    </ClCompile>
+    <ClCompile Include="LoginWidget.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="HomeWidget.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="MainFrame.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\common\container\AsideWidget.h">
+      <Filter>common\container</Filter>
+    </QtMoc>
+    <QtMoc Include="..\common\container\ContainerWidget.h">
+      <Filter>common\container</Filter>
+    </QtMoc>
+    <QtMoc Include="..\common\container\FooterWidget.h">
+      <Filter>common\container</Filter>
+    </QtMoc>
+    <QtMoc Include="..\common\container\FrameLine.h">
+      <Filter>common\container</Filter>
+    </QtMoc>
+    <QtMoc Include="..\common\container\HeaderWidget.h">
+      <Filter>common\container</Filter>
+    </QtMoc>
+    <QtMoc Include="..\common\container\MainWidget.h">
+      <Filter>common\container</Filter>
+    </QtMoc>
+    <QtMoc Include="LoginWidget.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="HomeWidget.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+  </ItemGroup>
+  <ItemGroup>
+    <QtRcc Include="MainFrame.qrc">
+      <Filter>Resource Files</Filter>
+    </QtRcc>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="util\TextUtil.h">
+      <Filter>util</Filter>
+    </ClInclude>
+    <ClInclude Include="util\IconUtil.h">
+      <Filter>util</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
