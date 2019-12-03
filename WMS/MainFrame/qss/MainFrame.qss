@@ -1,0 +1,18 @@
+
+QWidget#headerWidget {
+	background-image: url(:/images/bk-header.png)
+}
+
+QWidget#mainWidget {
+	background-image: url(:/images/bk-login.png)
+}
+
+QWidget#formWidget {
+	background-image: url(:/images/bk-form.png);
+	border: 2px solid; 
+	border-radius: 10px;
+}
+
+QPushButton#loginButton {
+	font: bold, 16px
+}

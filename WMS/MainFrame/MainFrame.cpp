@@ -1,6 +1,7 @@
 #include "MainFrame.h"
 #include "HomeWidget.h"
 #include "LoginWidget.h"
+#include "util/IconUtil.h"
 #include "util/TextUtil.h"
 
 #include <QtWidgets/QtWidgets>
@@ -9,13 +10,24 @@ MainFrame::MainFrame(QWidget *parent)
 	: QMainWindow(parent)
 {
 	initFrame();
+	createConnectes();
 
 	// 设置标题
 	setWindowTitle(TextUtil::TITLE);
-	setWindowIcon(QIcon(":/images/ams.png"));
+	setWindowIcon(QIcon(IconUtil::APP_ICON));
 
 	// 最大化显示
 	showMaximized();
+}
+
+void MainFrame::closeEvent(QCloseEvent *event)
+{
+	if (QMessageBox::warning(this, TextUtil::TITLE, TextUtil::CLOSE_CONFIRM,
+		QMessageBox::Yes | QMessageBox::No) == QMessageBox::Yes) {
+		event->accept();
+		return;
+	}
+	event->ignore();
 }
 
 void MainFrame::initFrame()
@@ -32,8 +44,12 @@ void MainFrame::initFrame()
 	m_stackedWidget->addWidget(m_homeWidget);
 	m_stackedWidget->setCurrentIndex(0);
 	setCentralWidget(m_stackedWidget);
+}
 
+void MainFrame::createConnectes()
+{
 	connect(m_loginWidget, SIGNAL(loginSuccess()), this, SLOT(doLoginSuccess()));
+	connect(m_loginWidget, SIGNAL(quitApp()), this, SLOT(close()));
 	connect(m_homeWidget, SIGNAL(logoutSuccess()), this, SLOT(doLogoutSuccess()));
 }
 

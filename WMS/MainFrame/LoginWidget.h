@@ -24,17 +24,25 @@ public:
 
 private:
 	void initWidget();
+	QWidget* initMainWidget();
 	void createConnectes();
 
 private slots:
 	void doLogin();
+	void doQuit();
 
 signals:
 	void loginSuccess();
+	void quitApp();
 
 private:
-	QPushButton* m_loginButton;
 	QPushButton* m_quitButton;
 	QPushButton* m_configButton;
+
+	QLabel* m_iconLabel;
+	QLineEdit* m_nameEdit;
+	QLineEdit* m_passwordEdit;
+	QCheckBox* m_passwordCheckBox;
+	QPushButton* m_loginButton;
 };
 #endif

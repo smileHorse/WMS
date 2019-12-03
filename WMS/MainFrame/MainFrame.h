@@ -13,8 +13,12 @@ class MainFrame : public QMainWindow
 public:
 	MainFrame(QWidget *parent = Q_NULLPTR);
 
+protected:
+	virtual void closeEvent(QCloseEvent *event);
+
 private:
 	void initFrame();
+	void createConnectes();
 
 private slots:
 	void doLoginSuccess();

@@ -15,10 +15,8 @@
 #include <QtCore/QtCore>
 
 namespace IconUtil {
-	// 头部窗体背景
-	const QString HEADER_BG = ":/images/bk-header.png";
+	// 程序图标
+	const QString APP_ICON = ":/images/app.png";
 
-	// 主窗体背景
-	const QString MAIN_BG = ":/images/bk-login.png";
-}
+};
 #endif

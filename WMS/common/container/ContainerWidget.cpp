@@ -65,6 +65,8 @@ void CContainerWidget::doLayout()
 
 	// 将顶栏容器、底栏容器与主要区域容器进行垂直布局
 	QVBoxLayout* layout = new QVBoxLayout();
+	layout->setContentsMargins(0, 0, 0, 0);
+	layout->setSpacing(0);
 	if (m_headerWidget)
 	{
 		layout->addWidget(m_headerWidget);
