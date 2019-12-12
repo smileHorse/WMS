@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="common">
+      <UniqueIdentifier>{e2b2d9c6-1a21-4c52-a374-cab304e4d6da}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="common\sql">
+      <UniqueIdentifier>{76267633-25b0-46c6-beb2-714bacd096f3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="common\log">
+      <UniqueIdentifier>{1b28ee0a-66d0-4d6d-a326-b051e2be3822}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\sql\UserTable.cpp">
+      <Filter>common\sql</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\sql\BaseDatabase.cpp">
+      <Filter>common\sql</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\sql\BaseTable.cpp">
+      <Filter>common\sql</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\log\logger.cpp">
+      <Filter>common\log</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\common\sql\UserTable.h">
+      <Filter>common\sql</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\sql\BaseDatabase.h">
+      <Filter>common\sql</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\sql\BaseTable.h">
+      <Filter>common\sql</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\log\logger.h">
+      <Filter>common\log</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
